@@ -83,3 +83,22 @@ deploy:
   branch: gh-pages
   message: update
   
+# Theme Config
+## theme:very-simple
+very_simple:
+  menu:
+    Home: /
+    About: about
+    Archives: archives
+  social:
+    email: 2525morimoto@gmail.com
+    twitter: 2525morimoto
+    github: OsamuMORIMOTO
+    googleplus:
+    rss: /atom.xml
+  fancybox: true
+  duoshuo: #duoshuo_shortname
+  disqus: osamunchi #disqus _shortname
+  google_analytics: #Google Analytics Tracking Code
+  google_adsense_page_level_ads: #Google Adsense Page Level Ads Code
+
