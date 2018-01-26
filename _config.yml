@@ -102,3 +102,13 @@ very_simple:
   google_analytics: #Google Analytics Tracking Code
   google_adsense_page_level_ads: #Google Adsense Page Level Ads Code
 
+# hexo-math Config
+## 
+math:
+  engine: 'mathjax'
+  mathjax:
+    src: "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    config:
+      tex2jax:
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ]
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
