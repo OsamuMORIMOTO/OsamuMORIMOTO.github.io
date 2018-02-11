@@ -3,19 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.4.4"
+    "version": "3.5.0"
   },
   "scripts": {
-    "hexo-gen": "hexo generate",
-    "hexo-gen-w": "hexo generate -w",
-    "hexo-gen-d": "hexo generate --draft",
-    "hexo-serv": "hexo server -s -i 192.168.33.10",
-    "hexo-serv-d": "hexo server -d -i 192.168.33.10",
-    "hexo-new": "hexo new",
-    "hexo-draft": "hexo new draft",
-    "hexo-pub": "hexo publish post",
-    "hexo-clean": "hexo clean",
-    "hexo-deploy": "hexo deploy -g"
+    "hexo": "hexo",
+    "watch": "hexo generate -w --draft",
+    "watch-post": "hexo generate -w",
+    "generate": "hexo generate --draft",
+    "generate-post": "hexo generate",
+    "server": "hexo server -s -i 192.168.33.10",
+    "new": "hexo new",
+    "draft": "hexo new draft",
+    "post": "hexo new post",
+    "publish": "hexo publish post",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy -g",
+    "clean-deploy": "run-s clean deploy",
+    "c-d": "run-s clean deploy",
+    "start": "run-p watch server"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -32,5 +37,8 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-tag-katex": "^1.1.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2"
   }
 }
